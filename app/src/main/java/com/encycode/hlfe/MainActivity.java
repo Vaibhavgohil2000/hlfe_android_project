@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(), SplashActivity.class);
+                Intent i = new Intent(getApplicationContext(), LoginActivity.class);
                 startActivity(i);
             }
         });
@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         contact_us.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(), SplashActivity.class);
+                Intent i = new Intent(getApplicationContext(), ContactUsActivity.class);
                 startActivity(i);
             }
         });
@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
         about_us.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(), SplashActivity.class);
+                Intent i = new Intent(getApplicationContext(), AboutUsActivity.class);
                 startActivity(i);
             }
         });

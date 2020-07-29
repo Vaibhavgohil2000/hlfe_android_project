@@ -14,7 +14,7 @@
     <color name="white">#fff</color>
     <color name="black">#000</color>
 
-    <color name="primary_text">#222222</color>
+    <color name="primary_text">#fff</color>
     <color name="heading_text">#e64b47</color>
     <color name="sub_heading">#cf403c</color>
     <color name="hint_text">#ff6a66</color>
