@@ -1,9 +1,155 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ContactUsActivity">
+    android:background="@color/red_white"
+    android:elevation="00dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".ContactUsActivity"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:background="@drawable/layout_bg_color"
+        android:elevation="10dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/contact_us_heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:drawableBottom="@drawable/divider"
+            android:drawablePadding="10dp"
+            android:drawableTint="@color/heading_text"
+            android:fontFamily="cursive"
+            android:gravity="center"
+            android:text="@string/contact_us_activity"
+            android:textColor="@color/heading_text"
+            android:textSize="45sp"
+            android:textStyle="bold" />
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/contact_name_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/primary_text"
+                    android:hint="Enter Full Name"
+                    android:singleLine="true"
+                    android:textColorHint="@color/hint_text"
+                    android:background="@drawable/edittext_bg_color"
+                    android:padding="10dp"
+                    android:drawableLeft="@drawable/icon_person"
+                    android:drawablePadding="10dp"
+                    android:drawableTint="@color/hint_text"/>
+
+                <EditText
+                    android:id="@+id/contact_email_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/primary_text"
+                    android:hint="Enter E-mail"
+                    android:inputType="textEmailAddress"
+                    android:textColorHint="@color/hint_text"
+                    android:background="@drawable/edittext_bg_color"
+                    android:padding="10dp"
+                    android:drawableLeft="@drawable/icon_email"
+                    android:drawablePadding="10dp"
+                    android:drawableTint="@color/hint_text"/>
+
+                <EditText
+                    android:id="@+id/contact_mobile_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/primary_text"
+                    android:hint="Enter Mobile Number"
+                    android:inputType="phone"
+                    android:textColorHint="@color/hint_text"
+                    android:background="@drawable/edittext_bg_color"
+                    android:padding="10dp"
+                    android:drawableLeft="@drawable/icon_mobile"
+                    android:drawablePadding="10dp"
+                    android:drawableTint="@color/hint_text"/>
+
+                <Spinner
+                    android:id="@+id/contact_event_dropdown"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/edittext_bg_color"
+                    style="@style/mySpinnerItemStyle"
+                    android:padding="10dp"/>
+
+
+                <EditText
+                    android:id="@+id/Estimate_date"
+                    android:clickable="true"
+                    android:editable="false"
+                    android:hint="Estimated Event Date"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/edittext_bg_color"
+                    android:padding="10dp"
+                    android:textColorHint="@color/hint_text"
+                    android:drawableLeft="@drawable/icon_date"
+                    android:drawablePadding="10dp"
+                    android:textColor="@color/primary_text"
+                    android:drawableTint="@color/hint_text"/>
+
+                <EditText
+                    android:id="@+id/contact_brief_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_bg_color"
+                    android:layout_margin="10dp"
+                    android:hint="Enter Query"
+                    android:textColorHint="@color/hint_text"
+                    android:padding="10dp"
+                    android:drawableLeft="@drawable/icon_query"
+                    android:drawableTint="@color/hint_text"
+                    android:drawablePadding="10dp"
+                    android:textColor="@color/primary_text"/>
+
+                <Button
+                    android:id="@+id/contact_sbmt_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_bg_color"
+                    android:layout_marginHorizontal="50dp"
+                    android:layout_marginVertical="30dp"
+                    android:text="Submit"
+                    android:textColor="@color/white_text"
+                    android:textStyle="bold"/>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

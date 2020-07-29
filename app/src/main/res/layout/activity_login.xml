@@ -20,19 +20,23 @@
         android:orientation="vertical"
         android:gravity="center"
         android:elevation="20dp"
-        android:background="@drawable/login_layout_bg_color"
-        android:padding="20dp">
+        android:background="@drawable/layout_bg_color">
 
         <TextView
-            android:layout_width="130dp"
+            android:id="@+id/login_heading"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="cursive"
             android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="@string/login_activity"
             android:textColor="@color/heading_text"
             android:textSize="45sp"
-            android:layout_margin="10dp"
-            android:textStyle="bold"
-            android:fontFamily="cursive"
-            android:text="@string/login_activity"/>
+            android:drawableBottom="@drawable/divider"
+            android:drawableTint="@color/heading_text"
+            android:layout_marginBottom="10dp"
+            android:drawablePadding="10dp"
+            android:textStyle="bold"/>
 
         <EditText
             android:id="@+id/login_email"
@@ -46,7 +50,9 @@
             android:textColorHint="@color/hint_text"
             android:drawableLeft="@drawable/icon_email"
             android:drawableTint="@color/hint_text"
-            android:layout_marginVertical="10dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginHorizontal="20dp"
             android:drawablePadding="10dp"/>
 
         <EditText
@@ -62,6 +68,7 @@
             android:textColorHint="@color/hint_text"
             android:drawableLeft="@drawable/icon_password"
             android:drawableTint="@color/hint_text"
+            android:layout_marginHorizontal="20dp"
             android:drawablePadding="10dp"/>
 
         <TextView
@@ -71,6 +78,7 @@
             android:layout_gravity="end"
             android:text="Forgo Password?"
             android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="20dp"
             android:textColor="@color/hint_text"
             android:textStyle="bold"/>
 
@@ -80,9 +88,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Login"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginBottom="20dp"
             android:background="@drawable/button_bg_color"
             android:textStyle="bold"
-            android:textColor="@color/primary_text"
+            android:textColor="@color/white_text"
             android:layout_marginTop="5dp"/>
 
     </LinearLayout>

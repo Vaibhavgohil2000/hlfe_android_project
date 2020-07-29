@@ -3,4 +3,18 @@
     <string name="login_activity"><b>Login</b></string>
     <string name="about_us_activity"><b>About Us</b></string>
     <string name="contact_us_activity"><b>Contact Us</b></string>
+
+    <string name="about_us_content_line_1">At <b>Holy Light Fame</b>, we are the <b>leading wedding event planner in Rajkot</b>, but beyond that, we are unique marriage organizers in Gujarat. We assist families and couples in organizing their wedding and thus offering them best wedding event management services.</string>
+    <string name="about_us_content_line_2">We are <b>actuality care about our clients and their success</b>. We started with party plot provider services and now we are able to do a lot more things to plan weddings and collaborate with multiple wedding event management companies in Rajkot. <b>Being the top event management company</b> our intent is to <b>offer a luxurious experience to our clients</b>, making them sense and feel to be at the top of their world.</string>
+    <string name="about_us_content_line_3">Being a wedding event company <b>we have enough experience</b> with the industry and comprehend the inside know how having cracked the code of client satisfaction. We have been successful to pick up the customers emotional connect to any event, which we can plan as the <b>best wedding planner in Rajkot, Gujarat.</b></string>
+
+
+    <string-array name="events_array">
+        <item>Select Event</item>
+        <item>Wedding</item>
+        <item>Reception</item>
+        <item>Engagement</item>
+        <item>Birthday Party</item>
+        <item>Corporate Party</item>
+    </string-array>
 </resources>

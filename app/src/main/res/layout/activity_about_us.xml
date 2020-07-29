@@ -1,9 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/red_white"
+    android:elevation="0dp"
+    android:gravity="center"
+    android:orientation="vertical"
     tools:context=".AboutUsActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/layout_bg_color"
+        android:elevation="11dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/about_us_heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:drawableBottom="@drawable/divider"
+            android:drawablePadding="10dp"
+            android:drawableTint="@color/heading_text"
+            android:fontFamily="cursive"
+            android:gravity="center"
+            android:text="@string/about_us_activity"
+            android:textColor="@color/heading_text"
+            android:textSize="45sp"
+            android:textStyle="bold" />
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/about_us_line1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="10dp"
+                    android:gravity="fill"
+                    android:text="@string/about_us_content_line_1"
+                    android:textColor="@color/hint_text"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/about_us_line2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="10dp"
+                    android:gravity="fill"
+                    android:text="@string/about_us_content_line_2"
+                    android:textColor="@color/hint_text"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/about_us_line3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="10dp"
+                    android:gravity="fill"
+                    android:text="@string/about_us_content_line_3"
+                    android:textColor="@color/hint_text"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+
+</LinearLayout>
